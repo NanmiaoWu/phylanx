@@ -429,10 +429,6 @@ class PhySL:
 
             PhySLFunction.compile()
 
-            phylanx.execution_tree.compile(
-                PhySL.compiler_state, self.file_name,
-                self.wrapped_function.__name__, self.__src__)
-
             self.is_compiled = True
         else:
             func_name = self.wrapped_function.__name__
